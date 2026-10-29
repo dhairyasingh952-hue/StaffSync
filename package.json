@@ -1,0 +1,16 @@
+{
+  "name": "staffsync-hrm-platform",
+  "version": "1.0.0",
+  "description": "StaffSync - Modern Human Resource Management Solution (MERN Stack)",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "seed": "npm --prefix backend run seed",
+    "server": "npm --prefix backend start",
+    "client": "npm --prefix frontend run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
